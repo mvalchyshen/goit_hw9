@@ -8,10 +8,8 @@ public class ExerciseOne {
         File file = new File(path);
         checkIfFileExists(file);
         String numbers = readNumbers(file);
-        if (numbers != null) {
-            String validNumbers = checkifNumbersValid(numbers);
-            print(validNumbers);
-        }
+        String validNumbers = checkIfNumbersValid(numbers);
+        print(validNumbers);
 
     }
 
@@ -44,7 +42,7 @@ public class ExerciseOne {
         return numbers.toString();
     }
 
-    private String checkifNumbersValid(String numbers) {
+    private String checkIfNumbersValid(String numbers) {
         StringBuilder result = new StringBuilder();
         String regex = "\\(\\d{3}\\)\s[0-9]{3}-[0-9]{4}";
         String regex1 = "[0-9]{3}-[0-9]{3}-[0-9]{4}";

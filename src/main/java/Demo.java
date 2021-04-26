@@ -6,6 +6,8 @@ public class Demo {
         new ExerciseOne(exOne);
         String exTwo = "resources/ExTwo/file.txt";
         new ExerciseTwo(exTwo);
+        String exThree = "resources/ExThree/words.txt";
+        new ExerciseThree(exThree);
 
     }
 }
